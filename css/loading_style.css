@@ -1,0 +1,101 @@
+.main_box {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	-webkit-animation: linear forwards 500ms 7500ms main_box;
+			animation: linear forwards 500ms 7500ms main_box;
+}
+.loading {
+	z-index: 111;
+	position: absolute;
+	top: calc(50% - 125px);
+	left: calc(50% - 125px);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: radial-gradient(circle, rgba(78,52,39,1) 17%, rgba(33,28,25,1) 69%);
+	-webkit-animation: linear forwards 6000ms loading_shadow;
+			animation: linear forwards 6000ms loading_shadow;			
+}
+.loading::before {
+	z-index: 111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: '';
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+    left: 0;
+	font-size: 50px;
+	font-weight: 900;
+	color: #fff;
+	-webkit-animation: linear forwards 6000ms loading;
+			animation: linear forwards 6000ms loading;
+}
+.vertical_container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+.vertical_box {
+	z-index: 100;
+	position: relative;
+	top: 0;
+	width: 20%;
+	height: 100%;
+	box-shadow: 0px 0px 5px 2px inset #211c19;
+	-webkit-box-shadow: 0px 0px 5px 2px inset #211c19;
+	background-color: #4e3427;
+}
+.vertical_box_1 {
+	-webkit-animation: linear forwards 1000ms vertical_box_1;
+			animation: linear forwards 1000ms vertical_box_1;
+}
+.vertical_box_2 {
+	-webkit-animation: linear forwards 1000ms 1000ms vertical_box_2;
+			animation: linear forwards 1000ms 1000ms vertical_box_2;
+}
+.vertical_box_3 {
+	-webkit-animation: linear forwards 1200ms 2000ms vertical_box_3;
+			animation: linear forwards 1200ms 2000ms vertical_box_3;
+}
+.vertical_box_4 {
+	-webkit-animation: linear forwards 1000ms 1500ms vertical_box_4;
+			animation: linear forwards 1000ms 1500ms vertical_box_4;
+}
+.vertical_box_5 {
+	-webkit-animation: linear forwards 1000ms 500ms vertical_box_5;
+			animation: linear forwards 1000ms 500ms vertical_box_5;
+}
+.horizontal_container {
+	z-index: 99;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.horizontal_box {
+	z-index: 99;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 25%;
+	box-shadow: 0px 0px 5px 2px inset #4e3427;
+	-webkit-box-shadow: 0px 0px 5px 2px inset #4e3427;
+	background-color: #211c19;
+}
+.horizontal_box_1,.horizontal_box_3 {
+	-webkit-animation: linear forwards 6500ms 3500ms horizontal_box_1_3;
+			animation: linear forwards 6500ms 3500ms horizontal_box_1_3;
+}
+.horizontal_box_2,.horizontal_box_4 {
+	-webkit-animation: linear forwards 6500ms 3500ms horizontal_box_2_4;
+			animation: linear forwards 6500ms 3500ms horizontal_box_2_4;
+}
